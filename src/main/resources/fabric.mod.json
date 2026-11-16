@@ -1,0 +1,12 @@
+{
+	"schemaVersion": 1,
+	"id": "streamcontrol",
+	"version": "${version}",
+	"name": "Stream Control",
+	"description": "Донаты DonationAlerts и голосования чата Twitch запускают команды на сервере. Только серверный мод.",
+	"authors": ["you"],
+	"license": "CC0-1.0",
+	"environment": "server",
+	"entrypoints": { "main": ["dev.stream.StreamControl"] },
+	"depends": { "fabricloader": ">=0.16.0", "minecraft": "~1.21.11", "java": ">=21", "fabric-api": "*" }
+}

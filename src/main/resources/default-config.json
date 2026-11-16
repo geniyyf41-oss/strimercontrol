@@ -1,0 +1,356 @@
+{
+  "owners": [
+    "ВПИШИ_НИК_СТРИМЕРА"
+  ],
+  "admins": [],
+  "mods": [],
+  "twitchChannel": "",
+  "donationAlertsToken": "",
+  "target": "@a",
+  "announceVotes": true,
+  "announceDonations": true,
+  "rules": [
+    {
+      "name": "Забрать предмет из руки",
+      "from": 10,
+      "to": 19,
+      "commands": "item replace entity {p} weapon.mainhand with minecraft:air"
+    },
+    {
+      "name": "Очистить инвентарь",
+      "from": 20,
+      "to": 29,
+      "commands": "clear {p}"
+    },
+    {
+      "name": "Случайный предмет (датапак)",
+      "from": 30,
+      "to": 39,
+      "commands": "function мойпак:random"
+    },
+    {
+      "name": "Подарок: золотое яблоко",
+      "from": 40,
+      "to": 49,
+      "commands": "give {p} minecraft:golden_apple 1"
+    },
+    {
+      "name": "Подарок: тотем",
+      "from": 50,
+      "to": 59,
+      "commands": "give {p} minecraft:totem_of_undying 1"
+    },
+    {
+      "name": "Подарок: алмаз",
+      "from": 60,
+      "to": 69,
+      "commands": "give {p} minecraft:diamond 1"
+    },
+    {
+      "name": "Подарок: стейки",
+      "from": 70,
+      "to": 79,
+      "commands": "give {p} minecraft:cooked_beef 8"
+    },
+    {
+      "name": "Подарок: ведро воды",
+      "from": 80,
+      "to": 89,
+      "commands": "give {p} minecraft:water_bucket 1"
+    },
+    {
+      "name": "Подарок: 64 камня",
+      "from": 90,
+      "to": 99,
+      "commands": "give {p} minecraft:cobblestone 64"
+    },
+    {
+      "name": "Лечение",
+      "from": 100,
+      "to": 109,
+      "commands": "effect give {p} minecraft:instant_health 1 3"
+    },
+    {
+      "name": "Насыщение",
+      "from": 110,
+      "to": 119,
+      "commands": "effect give {p} minecraft:saturation 5 1"
+    },
+    {
+      "name": "Слепота 20 с",
+      "from": 120,
+      "to": 129,
+      "commands": "effect give {p} minecraft:blindness 20 0"
+    },
+    {
+      "name": "Тьма 25 с",
+      "from": 130,
+      "to": 139,
+      "commands": "effect give {p} minecraft:darkness 25 0"
+    },
+    {
+      "name": "Замедление 30 с",
+      "from": 140,
+      "to": 149,
+      "commands": "effect give {p} minecraft:slowness 30 2"
+    },
+    {
+      "name": "Усталость 60 с",
+      "from": 150,
+      "to": 159,
+      "commands": "effect give {p} minecraft:mining_fatigue 60 2"
+    },
+    {
+      "name": "Тошнота 20 с",
+      "from": 160,
+      "to": 169,
+      "commands": "effect give {p} minecraft:nausea 20 0"
+    },
+    {
+      "name": "Голод 30 с",
+      "from": 170,
+      "to": 179,
+      "commands": "effect give {p} minecraft:hunger 30 3"
+    },
+    {
+      "name": "Слабость 60 с",
+      "from": 180,
+      "to": 189,
+      "commands": "effect give {p} minecraft:weakness 60 1"
+    },
+    {
+      "name": "Отравление 10 с",
+      "from": 190,
+      "to": 199,
+      "commands": "effect give {p} minecraft:poison 10 0"
+    },
+    {
+      "name": "Левитация 8 с",
+      "from": 200,
+      "to": 209,
+      "commands": "effect give {p} minecraft:levitation 8 0"
+    },
+    {
+      "name": "Свечение 60 с",
+      "from": 210,
+      "to": 219,
+      "commands": "effect give {p} minecraft:glowing 60 0"
+    },
+    {
+      "name": "Супер-прыжок 30 с",
+      "from": 220,
+      "to": 229,
+      "commands": "effect give {p} minecraft:jump_boost 30 6"
+    },
+    {
+      "name": "Ускорение 30 с",
+      "from": 230,
+      "to": 239,
+      "commands": "effect give {p} minecraft:speed 30 5"
+    },
+    {
+      "name": "Заморозка 10 с",
+      "from": 240,
+      "to": 249,
+      "commands": "effect give {p} minecraft:slowness 10 255 ;; effect give {p} minecraft:jump_boost 10 128"
+    },
+    {
+      "name": "Приключение 30 с (нельзя ломать)",
+      "from": 250,
+      "to": 259,
+      "commands": "gamemode adventure {p} ;; wait 30 ;; gamemode survival {p}"
+    },
+    {
+      "name": "Крипер рядом",
+      "from": 260,
+      "to": 269,
+      "commands": "execute at {p} run summon minecraft:creeper ~ ~ ~"
+    },
+    {
+      "name": "Заряженный крипер",
+      "from": 270,
+      "to": 279,
+      "commands": "execute at {p} run summon minecraft:creeper ~ ~ ~ {powered:1b}"
+    },
+    {
+      "name": "Три зомби",
+      "from": 280,
+      "to": 289,
+      "commands": "execute at {p} run summon minecraft:zombie ~ ~ ~ ;; execute at {p} run summon minecraft:zombie ~ ~ ~ ;; execute at {p} run summon minecraft:zombie ~ ~ ~"
+    },
+    {
+      "name": "Быстрый зомби-малыш",
+      "from": 290,
+      "to": 299,
+      "commands": "execute at {p} run summon minecraft:zombie ~ ~ ~ {IsBaby:1b}"
+    },
+    {
+      "name": "Три скелета",
+      "from": 300,
+      "to": 309,
+      "commands": "execute at {p} run summon minecraft:skeleton ~ ~ ~ ;; execute at {p} run summon minecraft:skeleton ~ ~ ~ ;; execute at {p} run summon minecraft:skeleton ~ ~ ~"
+    },
+    {
+      "name": "Паук с наездником",
+      "from": 310,
+      "to": 319,
+      "commands": "execute at {p} run summon minecraft:spider ~ ~ ~ {Passengers:[{id:\"minecraft:skeleton\"}]}"
+    },
+    {
+      "name": "Эндермен",
+      "from": 320,
+      "to": 329,
+      "commands": "execute at {p} run summon minecraft:enderman ~ ~ ~"
+    },
+    {
+      "name": "Ведьма",
+      "from": 330,
+      "to": 339,
+      "commands": "execute at {p} run summon minecraft:witch ~ ~ ~"
+    },
+    {
+      "name": "Три фантома",
+      "from": 340,
+      "to": 349,
+      "commands": "execute at {p} run summon minecraft:phantom ~ ~3 ~ ;; execute at {p} run summon minecraft:phantom ~ ~3 ~ ;; execute at {p} run summon minecraft:phantom ~ ~3 ~"
+    },
+    {
+      "name": "Блейз",
+      "from": 350,
+      "to": 359,
+      "commands": "execute at {p} run summon minecraft:blaze ~ ~2 ~"
+    },
+    {
+      "name": "Гаст над головой",
+      "from": 360,
+      "to": 369,
+      "commands": "execute at {p} run summon minecraft:ghast ~ ~12 ~"
+    },
+    {
+      "name": "Разоритель",
+      "from": 370,
+      "to": 379,
+      "commands": "execute at {p} run summon minecraft:ravager ~ ~ ~"
+    },
+    {
+      "name": "Три слизня",
+      "from": 380,
+      "to": 389,
+      "commands": "execute at {p} run summon minecraft:slime ~ ~ ~ ;; execute at {p} run summon minecraft:slime ~ ~ ~ ;; execute at {p} run summon minecraft:slime ~ ~ ~"
+    },
+    {
+      "name": "Вардэн (очень опасно)",
+      "from": 1000,
+      "to": 1009,
+      "commands": "execute at {p} run summon minecraft:warden ~ ~ ~"
+    },
+    {
+      "name": "Иссушитель (босс)",
+      "from": 2000,
+      "to": 2009,
+      "commands": "execute at {p} run summon minecraft:wither ~ ~ ~"
+    },
+    {
+      "name": "Ночь",
+      "from": 410,
+      "to": 419,
+      "commands": "time set night"
+    },
+    {
+      "name": "День",
+      "from": 420,
+      "to": 429,
+      "commands": "time set day"
+    },
+    {
+      "name": "Дождь",
+      "from": 430,
+      "to": 439,
+      "commands": "weather rain"
+    },
+    {
+      "name": "Гроза",
+      "from": 440,
+      "to": 449,
+      "commands": "weather thunder"
+    },
+    {
+      "name": "Ясно",
+      "from": 450,
+      "to": 459,
+      "commands": "weather clear"
+    },
+    {
+      "name": "Молния",
+      "from": 460,
+      "to": 469,
+      "commands": "execute at {p} run summon minecraft:lightning_bolt ~ ~ ~"
+    },
+    {
+      "name": "TNT над головой",
+      "from": 470,
+      "to": 479,
+      "commands": "execute at {p} run summon minecraft:tnt ~ ~4 ~ {fuse:50}"
+    },
+    {
+      "name": "Подбросить вверх",
+      "from": 480,
+      "to": 489,
+      "commands": "execute at {p} run tp {p} ~ ~30 ~"
+    },
+    {
+      "name": "Случайная телепортация",
+      "from": 490,
+      "to": 499,
+      "commands": "execute at {p} run spreadplayers ~ ~ 20 150 false {p}"
+    },
+    {
+      "name": "Паутина вокруг",
+      "from": 500,
+      "to": 509,
+      "commands": "execute at {p} run fill ~-1 ~ ~-1 ~1 ~1 ~1 minecraft:cobweb replace minecraft:air"
+    },
+    {
+      "name": "Урон 3 сердца",
+      "from": 510,
+      "to": 519,
+      "commands": "damage {p} 6"
+    },
+    {
+      "name": "Крипер в темноте",
+      "from": 520,
+      "to": 529,
+      "commands": "effect give {p} minecraft:blindness 10 0 ;; execute at {p} run summon minecraft:creeper ~ ~ ~"
+    },
+    {
+      "name": "Паника",
+      "from": 530,
+      "to": 539,
+      "commands": "effect give {p} minecraft:speed 10 3 ;; execute at {p} run summon minecraft:zombie ~ ~ ~ ;; execute at {p} run summon minecraft:zombie ~ ~ ~ ;; execute at {p} run summon minecraft:zombie ~ ~ ~"
+    },
+    {
+      "name": "Дождь из TNT",
+      "from": 540,
+      "to": 549,
+      "commands": "execute at {p} run summon minecraft:tnt ~ ~6 ~ {fuse:40} ;; wait 2 ;; execute at {p} run summon minecraft:tnt ~ ~6 ~ {fuse:40} ;; wait 2 ;; execute at {p} run summon minecraft:tnt ~ ~6 ~ {fuse:40} ;; wait 2 ;; execute at {p} run summon minecraft:tnt ~ ~6 ~ {fuse:40}"
+    },
+    {
+      "name": "Ловушка",
+      "from": 550,
+      "to": 559,
+      "commands": "execute at {p} run fill ~-1 ~ ~-1 ~1 ~1 ~1 minecraft:cobweb replace minecraft:air ;; execute at {p} run summon minecraft:creeper ~ ~ ~ ;; execute at {p} run summon minecraft:creeper ~ ~ ~"
+    },
+    {
+      "name": "Ночной кошмар",
+      "from": 560,
+      "to": 569,
+      "commands": "time set midnight ;; weather thunder ;; effect give {p} minecraft:darkness 30 0 ;; execute at {p} run summon minecraft:zombie ~ ~ ~ ;; execute at {p} run summon minecraft:zombie ~ ~ ~ ;; execute at {p} run summon minecraft:zombie ~ ~ ~"
+    },
+    {
+      "name": "Лифт: вверх и вниз",
+      "from": 570,
+      "to": 579,
+      "commands": "effect give {p} minecraft:levitation 8 6 ;; wait 9 ;; effect give {p} minecraft:slow_falling 1 0"
+    }
+  ]
+}
